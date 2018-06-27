@@ -1,0 +1,83 @@
+{
+      "armyList":{
+        "1":{"title":"tau army 1",
+          "text":"",
+          "units":[
+            {
+              "type" : 8,
+              "size" : 3,
+              "title" : "Crisis Team Red",
+              "text" : "1 crisis w/ x2 fusion blaster, ats & 2 attack drones"
+            },
+            {
+              "type" : 9,
+              "size" : 12,
+              "title" : "breacher team Yellow",
+               "text" : "9 fire warriors,1 shasui, 2 shield drones"
+            },
+            {
+              "type" : 9,
+              "size" : 10,
+              "title" : "breacher team black",
+              "text" : "10 fire warriors"
+            },
+            {
+              "type" : 10,
+              "size" : 12,
+              "title" : "devilfish 1",
+              "text" : ""
+            }
+          ]
+        },
+        "2":{"title":"space marines 2018",
+          "text":"",
+          "units":[
+            {
+              "type" : 1,
+              "size" : 1,
+              "title" : "xxxxtitle",
+              "text" : "xxxxxtext"
+            },
+            {
+              "type" : 2,
+              "size" : 2,
+              "title" : "yyyyytitle",
+              "text" : "yyyytext"
+            }
+          ]
+        }
+      },
+      "units":{
+      "0":{"army":0,"behaviour":0,"size":0,"name":"space marines tactical squad","fly":false},
+      "1":{"army":0,"behaviour":1,"size":0,"name":"space marines devastator squad","fly":false},
+      "2":{"army":0,"behaviour":3,"size":0,"name":"space marines assault squad","fly":false},
+      "3":{"army":0,"behaviour":2,"size":1,"name":"space marines land speeder","fly":true},
+      "4":{"army":1,"behaviour":0,"size":0,"name":"cultists","fly":false},
+      "5":{"army":1,"behaviour":2,"size":2,"name":"defiler","fly":false},
+      "6":{"army":2,"behaviour":0,"size":0,"name":"guardian squad","fly":false},
+      "7":{"army":2,"behaviour":2,"size":2,"name":"falcon","fly":true},
+      "8":{"army":3,"behaviour":2,"size":1,"name":"xv8 crisis battlesuits","fly":true},
+      "9":{"army":3,"behaviour":0,"size":0,"name":"fire warriors breachers","fly":false},
+      "10":{"army":3,"behaviour":4,"size":2,"name":"Devilfish","fly":true}
+      },
+      "armies":{
+          "0":{"name":"space marines"},
+          "1":{"name":"chaos"},
+          "2":{"name":"eldar"},
+          "3":{"name":"tau"}
+      },
+      "behaviour":{
+          "0":{"name":"tactical infantry"},
+          "1":{"name":"heavy support"},
+          "2":{"name":"fast support"},
+          "3":{"name":"assault"},
+          "4":{"name":"transport"},
+          "5":{"name":"assist"}
+      },
+      "sizes":{
+          "0":{"name":"light"},
+          "1":{"name":"medium"},
+          "2":{"name":"heavy"},
+          "3":{"name":"super heavy"}
+      }
+}
