@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomeCreate from '@/components/HomeCreate'
+import ArmiesCreation from '@/components/ArmiesCreation'
 import Armies from '@/components/Armies'
 import Units from '@/components/Units'
 import UnitCreation from '@/components/UnitCreation'
@@ -12,8 +12,8 @@ export default new Router({
   routes: [
     {
       path: '/armies-creation',
-      name: 'HomeCreate',
-      component: HomeCreate
+      name: 'ArmiesCreation',
+      component: ArmiesCreation
     },
     {
       path: '/armies',
@@ -26,7 +26,7 @@ export default new Router({
       component: Units
     },
     {
-      path: '/UnitCreation',
+      path: '/unit-creation',
       name: 'UnitCreation',
       component: UnitCreation
     },

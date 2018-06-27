@@ -10,6 +10,7 @@
               <v-form ref="form" lazy-validation>
                 <h2>Create a new unit :</h2>
 
+                <!-- input unit name -->
                 <v-text-field
                   v-model="unitName"
                   label="Unit name : "
@@ -17,6 +18,7 @@
                   required
                 ></v-text-field>
 
+                <!-- select faction -->
                 <v-select
                   :items="armiesRef"
                   v-model="armySelected"
@@ -25,8 +27,9 @@
                   item-value=name
                   item-text=name
                 >
-                </v-select>      
+                </v-select>
 
+                <!-- select size -->
                 <v-select
                   :items="sizesRef"
                   v-model="sizeSelected"
@@ -37,8 +40,10 @@
                 >
                 </v-select>
 
+                <!-- btn show info size -->
                 <v-btn small color="info" @click="infoSize = !infoSize">Show more info about units sizes</v-btn>
 
+                <!-- info dialog size -->
                 <v-dialog v-model="infoSize" max-width="500px">
                   <v-card>
                       <v-toolbar>
@@ -96,6 +101,7 @@
                   </v-card>
                 </v-dialog>
 
+                <!-- select behaviour -->
                 <v-select
                   :items="behaviourRef"
                   v-model="behaviourSelected"
@@ -106,8 +112,10 @@
                 >
                 </v-select>
 
+                <!-- btn show info behaviour -->
                 <v-btn small color="info" @click="infoBehaviour = !infoBehaviour">Show more info about units behaviours</v-btn>
 
+                <!-- info dialog behaviour -->
                 <v-dialog v-model="infoBehaviour" max-width="500px">
                   <v-card>
                       <v-toolbar>
@@ -204,16 +212,19 @@
                   </v-card>
                 </v-dialog>
 
+                <!-- is a transport Y/N -->
                 <v-switch
                   :label="`Is a transport: ${transportSelected.toString()}`"
                   v-model="transportSelected"
                 ></v-switch>
 
+                <!-- is an assist Y/N -->
                 <v-switch
                   :label="`Is an assist unit: ${assistSelected.toString()}`"
                   v-model="assistSelected"
                 ></v-switch>
 
+                <!-- select assist target -->
                 <v-select
                   v-if="assistSelected" 
                   :items="behaviourRef"
@@ -225,6 +236,7 @@
                 >
                 </v-select>
 
+                <!-- btn push unit -->
                 <v-btn large color="success" :disabled="!unitName || armySelected.length === 0 || sizeSelected.length === 0 || behaviourSelected.length === 0" @click="addUnit">Add the unit</v-btn>
               </v-form>
               <v-alert v-model="unitAlert" type="success" dismissible>

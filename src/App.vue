@@ -61,7 +61,7 @@
               <v-icon large color="blue darken-2">note_add</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
-              <router-link to="/UnitCreation" class="subheading">Unit creation</router-link>
+              <router-link to="/unit-creation" class="subheading">Unit creation</router-link>
             </v-list-tile-content>
           </v-list-tile>
           <span>Create a brand new unit pattern</span>

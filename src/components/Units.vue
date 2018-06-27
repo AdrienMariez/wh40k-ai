@@ -13,6 +13,9 @@
                 {{ unit.army }}
                 {{ unit.size }}
                 {{ unit.behaviour }}
+                {{ unit.isATransport }}
+                {{ unit.isASupport }}
+                {{ unit.SupportTarget }}
               </li>
             </ul>
           </v-flex>
